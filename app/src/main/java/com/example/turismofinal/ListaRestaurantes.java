@@ -6,11 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
-import com.example.turismofinal.Moldes.MoldeHotel;
 import com.example.turismofinal.Moldes.MoldeRestaurante;
-import com.example.turismofinal.adaptadores.AdaptadorHotel;
-import com.example.turismofinal.adaptadores.AdaptadorRestaurante;
-import com.example.turismofinal.adaptadores.AdaptadorRestaurante;
 
 
 import java.util.ArrayList;

@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AmpliandoHotel"
-    android:background="@drawable/nochee">
+    android:background="@drawable/gira">
 
     <TextView
-        android:id="@+id/Àmpliandonombrehotel"
+        android:id="@+id/Àmpliandonombrerest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="HOTEL EL BUEN HORIZONTE"
+        android:text="RESTAURANTE EL BUEN SAZON"
         android:textSize="20dp"
         android:textStyle="bold"
         android:textColor="@color/blueviolet"
@@ -24,29 +24,29 @@
 
 
     <ImageView
-        android:id="@+id/AmpliandofotoHotel"
+        android:id="@+id/AmpliandofotoRest"
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:scaleType="fitXY"
-        android:src="@drawable/lus"
+        android:src="@drawable/r5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Àmpliandonombrehotel"
+        app:layout_constraintTop_toBottomOf="@id/Àmpliandonombrerest"
         app:layout_constraintVertical_bias="0.05" />
 
     <TextView
-        android:id="@+id/AmpliandoprecioHotel"
+        android:id="@+id/AmpliandoprecioRest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="$275.000 COP"
+        android:text="$29.000 COP"
         android:textColor="@color/blueviolet"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/AmpliandofotoHotel"
+        app:layout_constraintTop_toBottomOf="@+id/AmpliandofotoRest"
         app:layout_constraintVertical_bias="0.141"
         app:layout_constraintHorizontal_bias="0.02"/>
 
@@ -61,7 +61,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/AmpliandoprecioHotel"
+        app:layout_constraintTop_toBottomOf="@+id/AmpliandoprecioRest"
         app:layout_constraintVertical_bias="0.05"
         app:layout_constraintHorizontal_bias="0.02"/>
 

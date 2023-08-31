@@ -6,7 +6,9 @@ import android.os.Bundle;
 
 import com.example.turismofinal.R;
 
-public class MoldeHotel extends AppCompatActivity {
+import java.io.Serializable;
+
+public class MoldeHotel implements Serializable {
 
     private String nombre;
 
