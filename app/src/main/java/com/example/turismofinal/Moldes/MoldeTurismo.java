@@ -1,6 +1,8 @@
 package com.example.turismofinal.Moldes;
 
-public class MoldeTurismo {
+import java.io.Serializable;
+
+public class MoldeTurismo implements Serializable {
 
     private String nombre;//atributos de la clase
     private String Nombrecontacto;
@@ -60,6 +62,8 @@ public class MoldeTurismo {
     public void setFoto(Integer foto) {
         this.foto = foto;
     }
+
+
 }
 
 

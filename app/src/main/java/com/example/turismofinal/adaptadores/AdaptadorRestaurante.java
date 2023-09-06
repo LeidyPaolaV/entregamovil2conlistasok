@@ -6,11 +6,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.turismofinal.AmpliandoHotel;
+import com.example.turismofinal.AmpliandoRestaurante;
 import com.example.turismofinal.ListaRestaurantes;
 import com.example.turismofinal.Moldes.MoldeRestaurante;
 import com.example.turismofinal.R;
@@ -60,7 +62,6 @@ public class AdaptadorRestaurante extends RecyclerView.Adapter<AdaptadorRestaura
             nombreRestaurante=itemView.findViewById(R.id.nombrelistarestaurantes);
             precioRestaurante=itemView.findViewById(R.id.preciolistarestaurantes);
             contactoRestaurante=itemView.findViewById(R.id.telefonorestaurante);
-
         }
 
         public void actualizarDatos(MoldeRestaurante moldeRestaurante) {
@@ -72,8 +73,8 @@ public class AdaptadorRestaurante extends RecyclerView.Adapter<AdaptadorRestaura
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(itemView.getContext(), AmpliandoHotel.class);
-                    intent.putExtra("datoshotel",moldeRestaurante);
+                    Intent intent = new Intent(itemView.getContext(), AmpliandoRestaurante.class);
+                    intent.putExtra("datosrestaurante",moldeRestaurante);
                     itemView.getContext().startActivity(intent);
                 }
             });

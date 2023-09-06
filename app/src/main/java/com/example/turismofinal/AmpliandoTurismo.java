@@ -18,7 +18,7 @@ public class AmpliandoTurismo extends AppCompatActivity {
         setContentView(R.layout.activity_ampliando_turismo);
 
         moldeTurismo=(MoldeTurismo) getIntent().getSerializableExtra("datosturismo");
-        Toast.makeText(this, moldeTurismo.getNombre(),Toast.LENGTH_LONG).show();
+        //Toast.makeText(this, moldeTurismo.getNombre(),Toast.LENGTH_LONG).show();
 
     }
 }

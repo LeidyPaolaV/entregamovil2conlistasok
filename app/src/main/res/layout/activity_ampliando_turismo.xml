@@ -7,10 +7,10 @@
     tools:context=".AmpliandoTurismo">
 
     <TextView
-        android:id="@+id/Àmpliandonombrehotel"
+        android:id="@+id/Àmpliandonombreturismo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="HOTEL EL BUEN HORIZONTE"
+        android:text="VALLE ENCANTADO"
         android:textSize="20dp"
         android:textStyle="bold"
         android:textColor="@color/blueviolet"
@@ -23,20 +23,20 @@
 
 
     <ImageView
-        android:id="@+id/AmpliandofotoHotel"
+        android:id="@+id/Ampliandofototurismo"
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:scaleType="fitXY"
-        android:src="@drawable/lus"
+        android:src="@drawable/s2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Àmpliandonombrehotel"
+        app:layout_constraintTop_toBottomOf="@id/Àmpliandonombreturismo"
         app:layout_constraintVertical_bias="0.05" />
 
     <TextView
-        android:id="@+id/AmpliandoprecioHotel"
+        android:id="@+id/Ampliandoprecioturismo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="$275.000 COP"
@@ -45,12 +45,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/AmpliandofotoHotel"
+        app:layout_constraintTop_toBottomOf="@+id/Ampliandofototurismo"
         app:layout_constraintVertical_bias="0.141"
         app:layout_constraintHorizontal_bias="0.02"/>
 
     <TextView
-        android:id="@+id/Ampliandocontactohotel"
+        android:id="@+id/Ampliandocontactoturismo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="3157854262"
@@ -60,12 +60,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/AmpliandoprecioHotel"
+        app:layout_constraintTop_toBottomOf="@+id/Ampliandoprecioturismo"
         app:layout_constraintVertical_bias="0.05"
         app:layout_constraintHorizontal_bias="0.02"/>
 
     <TextView
-        android:id="@+id/resenaAhotel"
+        android:id="@+id/resenaAturismo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="En este hermoso hotel tenemos la mejor atencion para ti y tu familia. Contamos con la mejor vista a nuestro hermoso paisaje "
@@ -76,7 +76,7 @@
         app:layout_constraintEnd_toEndOf="parent"
 
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Ampliandocontactohotel"
+        app:layout_constraintTop_toBottomOf="@+id/Ampliandocontactoturismo"
         app:layout_constraintVertical_bias="0.049"
         app:layout_constraintHorizontal_bias="0.0"
         android:textAlignment="center"/>

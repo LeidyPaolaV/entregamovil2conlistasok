@@ -72,7 +72,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintVertical_bias="0.039"
         app:layout_constraintHorizontal_bias="0.5"
-        android:text="Lina Rios"
+        android:text="Leidy Vergara"
         android:textSize="20dp"
         />
 
