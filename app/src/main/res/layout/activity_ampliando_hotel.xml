@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AmpliandoHotel"
-    android:background="@drawable/nochee">
+   >
 
     <TextView
         android:id="@+id/Àmpliandonombrehotel"
@@ -25,30 +25,30 @@
 
     <ImageView
         android:id="@+id/AmpliandofotoHotel"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
         android:scaleType="fitXY"
         android:src="@drawable/lus"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/Àmpliandonombrehotel"
         app:layout_constraintVertical_bias="0.05" />
 
     <TextView
         android:id="@+id/AmpliandoprecioHotel"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:text="$275.000 COP"
         android:textColor="@color/blueviolet"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/AmpliandofotoHotel"
-        app:layout_constraintVertical_bias="0.141"
-        app:layout_constraintHorizontal_bias="0.02"/>
+        app:layout_constraintVertical_bias="0.07" />
 
     <TextView
         android:id="@+id/Ampliandocontactohotel"
@@ -66,7 +66,7 @@
         app:layout_constraintHorizontal_bias="0.02"/>
 
     <TextView
-        android:id="@+id/resenaAhotel"
+        android:id="@+id/valoracion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="En este hermoso hotel tenemos la mejor atencion para ti y tu familia. Contamos con la mejor vista a nuestro hermoso paisaje "
@@ -75,25 +75,39 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Ampliandocontactohotel"
         app:layout_constraintVertical_bias="0.049"
         app:layout_constraintHorizontal_bias="0.0"
         android:textAlignment="center"/>
 
+
+    <ImageView
+        android:id="@+id/fotoadicional"
+        android:layout_width="160dp"
+        android:layout_height="139dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/hh1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/valoracion"
+        app:layout_constraintVertical_bias="0.292" />
+
     <Button
         android:id="@+id/botonReservar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/custom_button"
         android:text="Reservar"
         app:backgroundTint="@null"
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fotoadicional"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

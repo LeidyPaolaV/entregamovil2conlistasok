@@ -11,23 +11,33 @@ import java.io.Serializable;
 public class MoldeHotel implements Serializable {
 
     private String nombre;
-
     private String precio;
-
     private String telefono;
-
     private Integer foto;
+    private String valoracion;
+
+
 
     public MoldeHotel (){
         //constructor vacio
     }
 
-    public MoldeHotel (String nombre, String precio,String telefono,Integer foto){
+
+    public MoldeHotel(String nombre, String precio, String telefono, Integer foto, String valoracion) {
         this.nombre = nombre;
         this.precio = precio;
         this.telefono = telefono;
         this.foto = foto;
-    }//constructor lleno
+        this.valoracion = valoracion;
+    }
+
+    public String getValoracion() {
+        return valoracion;
+    }
+
+    public void setValoracion(String valoracion) {
+        this.valoracion = valoracion;
+    }
 
     public String getNombre (){return nombre;}
 
