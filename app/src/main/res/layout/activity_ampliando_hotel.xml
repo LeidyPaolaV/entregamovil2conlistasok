@@ -5,28 +5,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AmpliandoHotel"
+    android:background="@drawable/flor"
    >
 
     <TextView
         android:id="@+id/Àmpliandonombrehotel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="267dp"
+        android:layout_height="36dp"
         android:text="HOTEL EL BUEN HORIZONTE"
+        android:textColor="@color/black"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:textColor="@color/blueviolet"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintVertical_bias="0.1" />
 
 
     <ImageView
         android:id="@+id/AmpliandofotoHotel"
-        android:layout_width="170dp"
-        android:layout_height="170dp"
+        android:layout_width="228dp"
+        android:layout_height="177dp"
         android:scaleType="fitXY"
         android:src="@drawable/lus"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -41,51 +42,51 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:text="$275.000 COP"
-        android:textColor="@color/blueviolet"
+        android:textColor="@color/black"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.751"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/AmpliandofotoHotel"
-        app:layout_constraintVertical_bias="0.07" />
+        app:layout_constraintVertical_bias="0.084" />
 
     <TextView
         android:id="@+id/Ampliandocontactohotel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="3157854262"
-        android:textColor="@color/blueviolet"
+        android:textColor="@color/black"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.407"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/AmpliandoprecioHotel"
-        app:layout_constraintVertical_bias="0.05"
-        app:layout_constraintHorizontal_bias="0.02"/>
+        app:layout_constraintVertical_bias="0.039" />
 
     <TextView
         android:id="@+id/valoracion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="401dp"
+        android:layout_height="49dp"
         android:text="Me gusto Mucho el Hotel, la sencillez de la recepcionista me encanto"
-        android:textColor="@color/blueviolet"
+        android:textAlignment="center"
+        android:textColor="@color/black"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Ampliandocontactohotel"
-        app:layout_constraintVertical_bias="0.049"
-        app:layout_constraintHorizontal_bias="0.0"
-        android:textAlignment="center"/>
+        app:layout_constraintVertical_bias="0.049" />
 
 
     <ImageView
         android:id="@+id/fotoadicional"
-        android:layout_width="160dp"
-        android:layout_height="139dp"
+        android:layout_width="207dp"
+        android:layout_height="162dp"
         android:scaleType="fitXY"
         android:src="@drawable/hh1"
         app:layout_constraintBottom_toBottomOf="parent"
