@@ -19,6 +19,63 @@ public class AmpliandoRestaurante extends AppCompatActivity {
     TextView Ampliandocontactohotel;
     TextView resenaAhotel;
 
+    ImageView fotoadicional;
+
+    public MoldeRestaurante getMoldeRestaurante() {
+        return moldeRestaurante;
+    }
+
+    public void setMoldeRestaurante(MoldeRestaurante moldeRestaurante) {
+        this.moldeRestaurante = moldeRestaurante;
+    }
+
+    public TextView getÀmpliandonombrerest() {
+        return Àmpliandonombrerest;
+    }
+
+    public void setÀmpliandonombrerest(TextView àmpliandonombrerest) {
+        Àmpliandonombrerest = àmpliandonombrerest;
+    }
+
+    public ImageView getAmpliandofotoRest() {
+        return AmpliandofotoRest;
+    }
+
+    public void setAmpliandofotoRest(ImageView ampliandofotoRest) {
+        AmpliandofotoRest = ampliandofotoRest;
+    }
+
+    public TextView getAmpliandoprecioRest() {
+        return AmpliandoprecioRest;
+    }
+
+    public void setAmpliandoprecioRest(TextView ampliandoprecioRest) {
+        AmpliandoprecioRest = ampliandoprecioRest;
+    }
+
+    public TextView getAmpliandocontactohotel() {
+        return Ampliandocontactohotel;
+    }
+
+    public void setAmpliandocontactohotel(TextView ampliandocontactohotel) {
+        Ampliandocontactohotel = ampliandocontactohotel;
+    }
+
+    public TextView getResenaAhotel() {
+        return resenaAhotel;
+    }
+
+    public void setResenaAhotel(TextView resenaAhotel) {
+        this.resenaAhotel = resenaAhotel;
+    }
+
+    public ImageView getFotoadicional() {
+        return fotoadicional;
+    }
+
+    public void setFotoadicional(ImageView fotoadicional) {
+        this.fotoadicional = fotoadicional;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +88,7 @@ public class AmpliandoRestaurante extends AppCompatActivity {
         AmpliandoprecioRest=findViewById(R.id.AmpliandoprecioRest);
         Ampliandocontactohotel=findViewById(R.id.Ampliandocontactohotel);
         resenaAhotel=findViewById(R.id.resenaAhotel);
+        fotoadicional=findViewById(R.id.fotoadicional);
 
 
 

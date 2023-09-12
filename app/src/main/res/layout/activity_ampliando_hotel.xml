@@ -69,7 +69,7 @@
         android:id="@+id/valoracion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="En este hermoso hotel tenemos la mejor atencion para ti y tu familia. Contamos con la mejor vista a nuestro hermoso paisaje "
+        android:text="Me gusto Mucho el Hotel, la sencillez de la recepcionista me encanto"
         android:textColor="@color/blueviolet"
         android:textSize="20dp"
         android:textStyle="bold"

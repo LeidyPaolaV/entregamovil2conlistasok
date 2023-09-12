@@ -26,7 +26,7 @@
     <ImageView
         android:id="@+id/AmpliandofotoRest"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="180dp"
         android:scaleType="fitXY"
         android:src="@drawable/r5"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -41,46 +41,58 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="$29.000 COP"
-        android:textColor="@color/blueviolet"
+        android:textColor="@color/white"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.409"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/AmpliandofotoRest"
-        app:layout_constraintVertical_bias="0.141"
-        app:layout_constraintHorizontal_bias="0.02"/>
+        app:layout_constraintVertical_bias="0.128" />
 
     <TextView
         android:id="@+id/Ampliandocontactohotel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="3157854262"
-        android:textColor="@color/blueviolet"
+        android:textColor="@color/white"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.417"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/AmpliandoprecioRest"
-        app:layout_constraintVertical_bias="0.05"
-        app:layout_constraintHorizontal_bias="0.02"/>
+        app:layout_constraintVertical_bias="0.064" />
 
     <TextView
         android:id="@+id/resenaAhotel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="En este hermoso hotel tenemos la mejor atencion para ti y tu familia. Contamos con la mejor vista a nuestro hermoso paisaje "
-        android:textColor="@color/blueviolet"
+        android:text="Todo me a encantado, vengo de otro pais y su sabor me a enloquecido "
+        android:textColor="@color/white"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Ampliandocontactohotel"
         app:layout_constraintVertical_bias="0.049"
         app:layout_constraintHorizontal_bias="0.0"
         android:textAlignment="center"/>
+
+    <ImageView
+        android:id="@+id/fotoadicional"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/restt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/resenaAhotel"
+        app:layout_constraintVertical_bias="0.292" />
 
     <Button
         android:id="@+id/botonReservar"

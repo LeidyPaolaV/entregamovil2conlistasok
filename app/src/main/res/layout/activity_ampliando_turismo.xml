@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AmpliandoTurismo">
+    tools:context=".AmpliandoTurismo"
+    android:background="@drawable/hdmorado">
 
     <TextView
         android:id="@+id/Àmpliandonombreturismo"
@@ -13,7 +14,7 @@
         android:text="VALLE ENCANTADO"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:textColor="@color/blueviolet"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,7 +26,7 @@
     <ImageView
         android:id="@+id/Ampliandofototurismo"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="150dp"
         android:scaleType="fitXY"
         android:src="@drawable/s2"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -40,7 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="$275.000 COP"
-        android:textColor="@color/blueviolet"
+        android:textColor="@color/white"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,7 +55,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="3157854262"
-        android:textColor="@color/blueviolet"
+        android:textColor="@color/white"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -68,18 +69,30 @@
         android:id="@+id/resenaAturismo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="En este hermoso hotel tenemos la mejor atencion para ti y tu familia. Contamos con la mejor vista a nuestro hermoso paisaje "
-        android:textColor="@color/blueviolet"
+        android:text="Quede encantada con este lugar, es maravilloso y su gente es muy gentil y amable "
+        android:textColor="@color/white"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Ampliandocontactoturismo"
         app:layout_constraintVertical_bias="0.049"
         app:layout_constraintHorizontal_bias="0.0"
         android:textAlignment="center"/>
+
+    <ImageView
+        android:id="@+id/fotoadicional"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/fotsmu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/resenaAturismo"
+        app:layout_constraintVertical_bias="0.292" />
 
     <Button
         android:id="@+id/botonReservar"
