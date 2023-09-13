@@ -13,12 +13,11 @@ import com.example.turismofinal.Moldes.MoldeRestaurante;
 public class AmpliandoRestaurante extends AppCompatActivity {
 
     MoldeRestaurante moldeRestaurante;
-    TextView Àmpliandonombrerest;
+    TextView Ampliandonombrerest;
     ImageView AmpliandofotoRest;
     TextView AmpliandoprecioRest;
     TextView Ampliandocontactohotel;
     TextView resenaAhotel;
-
     ImageView fotoadicional;
 
     public MoldeRestaurante getMoldeRestaurante() {
@@ -29,12 +28,13 @@ public class AmpliandoRestaurante extends AppCompatActivity {
         this.moldeRestaurante = moldeRestaurante;
     }
 
-    public TextView getÀmpliandonombrerest() {
-        return Àmpliandonombrerest;
+
+    public TextView getAmpliandonombrerest() {
+        return Ampliandonombrerest;
     }
 
-    public void setÀmpliandonombrerest(TextView àmpliandonombrerest) {
-        Àmpliandonombrerest = àmpliandonombrerest;
+    public void setAmpliandonombrerest(TextView ampliandonombrerest) {
+        Ampliandonombrerest = ampliandonombrerest;
     }
 
     public ImageView getAmpliandofotoRest() {
@@ -83,12 +83,12 @@ public class AmpliandoRestaurante extends AppCompatActivity {
         setContentView(R.layout.activity_ampliando_restaurante);
 
 
-        Àmpliandonombrerest=findViewById(R.id.Àmpliandonombrerest);
+        Ampliandonombrerest=findViewById(R.id.Àmpliandonombrerest);
         AmpliandofotoRest=findViewById(R.id.AmpliandofotoRest);
         AmpliandoprecioRest=findViewById(R.id.AmpliandoprecioRest);
         Ampliandocontactohotel=findViewById(R.id.Ampliandocontactohotel);
-        resenaAhotel=findViewById(R.id.resenaAhotel);
-        fotoadicional=findViewById(R.id.fotoadicional);
+        resenaAhotel=findViewById(R.id.resenaAhotelrest);
+        fotoadicional=findViewById(R.id.fotoadicionalrest);
 
 
 
@@ -97,6 +97,16 @@ public class AmpliandoRestaurante extends AppCompatActivity {
 
             moldeRestaurante=(MoldeRestaurante) getIntent().getSerializableExtra("datosrestaurante");
             Toast.makeText(this, moldeRestaurante.getNombre(),Toast.LENGTH_LONG).show();
+
+        //CARGANDO LA INFO EN LOS COMPONENTES GRAFICOS
+        AmpliandofotoRest.setImageResource(moldeRestaurante.getFoto());
+        AmpliandoprecioRest.setText(moldeRestaurante.getRangoprecio());
+        Ampliandonombrerest.setText(moldeRestaurante.getNombre());
+        Ampliandocontactohotel.setText(moldeRestaurante.getTelefono());
+        resenaAhotel.setText(moldeRestaurante.getResena());
+        fotoadicional.setImageResource(moldeRestaurante.getFotoadicional());
+
+
 
 
     }

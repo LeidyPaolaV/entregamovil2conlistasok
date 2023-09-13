@@ -18,7 +18,14 @@ public class AmpliandoTurismo extends AppCompatActivity {
     TextView Ampliandoprecioturismo;
     TextView Ampliandocontactoturismo;
     TextView resenaAturismo;
-   ImageView fotoadicional;
+    ImageView fotoadicional;
+
+    public AmpliandoTurismo() {
+    }
+
+    public AmpliandoTurismo(int contentLayoutId) {
+        super(contentLayoutId);
+    }
 
     public MoldeTurismo getMoldeTurismo() {
         return moldeTurismo;
@@ -76,7 +83,10 @@ public class AmpliandoTurismo extends AppCompatActivity {
         this.fotoadicional = fotoadicional;
     }
 
-    public AmpliandoTurismo(MoldeTurismo moldeTurismo, TextView àmpliandonombreturismo, ImageView ampliandofototurismo, TextView ampliandoprecioturismo, TextView ampliandocontactoturismo, TextView resenaAturismo, ImageView fotoadicional) {
+
+
+    public AmpliandoTurismo(int contentLayoutId, MoldeTurismo moldeTurismo, TextView àmpliandonombreturismo, ImageView ampliandofototurismo, TextView ampliandoprecioturismo, TextView ampliandocontactoturismo, TextView resenaAturismo, ImageView fotoadicional) {
+        super(contentLayoutId);
         this.moldeTurismo = moldeTurismo;
         Àmpliandonombreturismo = àmpliandonombreturismo;
         Ampliandofototurismo = ampliandofototurismo;

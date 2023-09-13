@@ -100,6 +100,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="36dp"
         android:background="@drawable/custom_button"
+        android:textColor="@color/black"
         android:text="Reservar"
         app:backgroundTint="@null"
         app:cornerRadius="20dp"

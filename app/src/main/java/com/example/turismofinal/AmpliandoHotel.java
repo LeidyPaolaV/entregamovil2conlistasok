@@ -3,6 +3,7 @@ package com.example.turismofinal;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -17,6 +18,7 @@ public class AmpliandoHotel extends AppCompatActivity {
     TextView AmpliandoprecioHotel;
     TextView Ampliandocontactohotel;
     TextView valoracion;
+    ImageView fotoadicional;
 
 
 
@@ -31,6 +33,7 @@ public class AmpliandoHotel extends AppCompatActivity {
         AmpliandoprecioHotel=findViewById(R.id.AmpliandoprecioHotel);
         Ampliandocontactohotel=findViewById(R.id.Ampliandocontactohotel);
         valoracion=findViewById(R.id.valoracion);
+        fotoadicional=findViewById(R.id.fotoadicional);
 
         moldeHotel=(MoldeHotel) getIntent().getSerializableExtra("datoshotel");
         Toast.makeText(this, moldeHotel.getNombre(),Toast.LENGTH_LONG).show();

@@ -9,18 +9,21 @@ public class MoldeTurismo implements Serializable {
     private String telefono;
     private String precio;
     private Integer foto;
-
+    private String resenaAturismo;
+    private Integer fotoadicional;
 
 
     public MoldeTurismo() {  //constructor vacio: sirven para sacar copias a los valores
     }
 
-    public MoldeTurismo(String nombre, String nombrecontacto, String telefono, String precio, Integer foto) {  //constructor lleno
+    public MoldeTurismo(String nombre, String nombrecontacto, String telefono, String precio, Integer foto, String resenaAturismo, Integer fotoadicional) {
         this.nombre = nombre;
         Nombrecontacto = nombrecontacto;
         this.telefono = telefono;
         this.precio = precio;
         this.foto = foto;
+        this.resenaAturismo = resenaAturismo;
+        this.fotoadicional = fotoadicional;
     }
 
     public String getNombre() {
@@ -63,7 +66,21 @@ public class MoldeTurismo implements Serializable {
         this.foto = foto;
     }
 
+    public String getResenaAturismo() {
+        return resenaAturismo;
+    }
 
+    public void setResenaAturismo(String resenaAturismo) {
+        this.resenaAturismo = resenaAturismo;
+    }
+
+    public Integer getFotoadicional() {
+        return fotoadicional;
+    }
+
+    public void setFotoadicional(Integer fotoadicional) {
+        this.fotoadicional = fotoadicional;
+    }
 }
 
 

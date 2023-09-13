@@ -30,11 +30,11 @@ public class ListaHoteles extends AppCompatActivity {
 
     }
     public void llenarListaConDatos(){
-        listaHoteles.add(new MoldeHotel("Hotel casa Benigno", "$80000 COP", "3107099476",R.drawable.h1, "5.0 En este maravilloso hotel estaras tan comodo que no extrañaras tu casa"));
-        listaHoteles.add(new MoldeHotel("Hotel caña de azùcar", "$150000 COP", "3225457893",R.drawable.h2, "En este hermoso complejo te esperan con los brazos abiertos"));
-        listaHoteles.add(new MoldeHotel("Hotel flor de durazno", "$180000 COP", "3152635846",R.drawable.h3, "En este maravilloso hotel estaras tan comodo que no extrañaras tu casa"));
-        listaHoteles.add(new MoldeHotel("Hotel la campera", "$200000 COP", "3053425935",R.drawable.h4, "En este maravilloso hotel estaras tan comodo que no extrañaras tu casa"));
-        listaHoteles.add(new MoldeHotel("Hotel villas vieja", "$350000 COP", "3286471200",R.drawable.h5, "En este maravilloso hotel estaras tan comodo que no extrañaras tu casa"));
+        listaHoteles.add(new MoldeHotel("Hotel casa Benigno", "$80000 COP", "3107099476",R.drawable.h1, "5.0 Me  senti super comoda en este lugar, me encanto",R.drawable.hoteee));
+        listaHoteles.add(new MoldeHotel("Hotel caña de azùcar", "$150000 COP", "3225457893",R.drawable.h2, "4.0 me gusto mucho, pero deberian de dar mas desayuno, muy poco",R.drawable.cache));
+        listaHoteles.add(new MoldeHotel("Hotel flor de durazno", "$180000 COP", "3152635846",R.drawable.h3, "En este maravilloso hotel estaras tan comodo que no extrañaras tu casa",R.drawable.dec));
+        listaHoteles.add(new MoldeHotel("Hotel la campera", "$200000 COP", "3053425935",R.drawable.h4, "En este maravilloso hotel estaras tan comodo que no extrañaras tu casa", R.drawable.fff));
+        listaHoteles.add(new MoldeHotel("Hotel villas vieja", "$350000 COP", "3286471200",R.drawable.h5, "En este maravilloso hotel estaras tan comodo que no extrañaras tu casa",R.drawable.reee));
     }
 }
 

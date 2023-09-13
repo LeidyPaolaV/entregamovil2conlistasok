@@ -30,11 +30,11 @@ public class ListaRestaurantes extends AppCompatActivity {
 
     }
     public void llenarListaConDatos(){
-        listaRestaurantes.add(new MoldeRestaurante("El Buen Sazon","3107099476", "23000 COP", "Ajiaco", R.drawable.r1));
-        listaRestaurantes.add(new MoldeRestaurante("La Cocina De Otilia","3115468265", "23000 COP", "Frijoles", R.drawable.r2));
-        listaRestaurantes.add(new MoldeRestaurante("Comiendo","3165467844", "23000 COP", "Sancocho", R.drawable.r3));
-        listaRestaurantes.add(new MoldeRestaurante("La Delicia", "3107099476","33000 COP", "sPAGGUTTIS",R.drawable.r4));
-        listaRestaurantes.add(new MoldeRestaurante("El Meson", "315658456", "44000 cop","frijoles",R.drawable.r5));
+        listaRestaurantes.add(new MoldeRestaurante("El Buen Sazon","3107099476", "23000 COP", "Ajiaco", R.drawable.r1, R.drawable.patio,"Todo me a encantado, vengo de otro pais y su sabor me a enloquecido"));
+        listaRestaurantes.add(new MoldeRestaurante("La Cocina De Otilia","3115468265", "23000 COP", "Frijoles", R.drawable.r2, R.drawable.tyy,"Todo me a encantado, vengo de otro pais y su sabor me a enloquecido"));
+        listaRestaurantes.add(new MoldeRestaurante("Comiendo","3165467844", "23000 COP", "Sancocho", R.drawable.r3, R.drawable.club,"Todo me a encantado, vengo de otro pais y su sabor me a enloquecido"));
+        listaRestaurantes.add(new MoldeRestaurante("La Delicia", "3107099476","33000 COP", "sPAGGUTTIS",R.drawable.r4, R.drawable.name,"Todo me a encantado, vengo de otro pais y su sabor me a enloquecido"));
+        listaRestaurantes.add(new MoldeRestaurante("El Meson", "315658456", "44000 cop","frijoles",R.drawable.r5, R.drawable.terraza,"Todo me a encantado, vengo de otro pais y su sabor me a enloquecido"));
     }
 }
 
