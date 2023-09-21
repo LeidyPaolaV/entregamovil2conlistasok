@@ -1,13 +1,20 @@
 package com.example.turismofinal;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.example.turismofinal.Moldes.MoldeHotel;
 import com.example.turismofinal.adaptadores.AdaptadorHotel;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 
 
 import java.util.ArrayList;
@@ -17,12 +24,34 @@ public class ListaHoteles extends AppCompatActivity {
     ArrayList<MoldeHotel> listaHoteles=new ArrayList<>();
     RecyclerView recyclerView;
 
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_hoteles);
         recyclerView=findViewById(R.id.listadinamicahoteles);
         recyclerView.setLayoutManager(new LinearLayoutManager(this,RecyclerView.VERTICAL,false));
+
+        db.collection("hoteles")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+
+                                String nombreHotel=document.getString("nombre");
+                                String precioHotel=document.getString("precio");
+                                Toast.makeText(ListaHoteles.this, "nombreHotel", Toast.LENGTH_SHORT).show();
+
+                            }
+                        } else {
+
+                        }
+                    }
+                });
 
         llenarListaConDatos();
         AdaptadorHotel adaptadorHoteles=new AdaptadorHotel(listaHoteles);
